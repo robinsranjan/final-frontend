@@ -1,0 +1,14 @@
+.form-control:valid {
+    background-color: #7979dc !important;
+}
+
+
+
+.card {
+    background-color: #7979dc;
+
+}
+
+.adjust-line-height {
+    line-height: 2em;
+}

@@ -1,0 +1,97 @@
+<div class="container ">
+    <div class="row">
+        <div class="col-sm-2">
+
+        </div>
+        <div class="col-sm-8 justify-content-center" style="background-color: rgb(174, 170, 160);">
+            <div class="card-body">
+                <main>
+                    <div class="py-lg-4 text-center">
+                        <img class="d-block mx-auto mb-4" src="assets/images/payment.jpg" alt="" width="72" height="57">
+                        <h1>PAYMENT FORM</h1>
+                        <h4>Please complete your payment process......</h4>
+                    </div>
+
+
+                    <div class="mb-3">
+                        Select your option
+                    </div>
+
+                    <div class="my-3">
+                        <div class="form-check">
+                            <input id="credit" name="paymentMethod" type="radio" class="form-check-input" checked=""
+                                required="">
+                            <label class="form-check-label" for="credit">Credit card</label>
+                        </div>
+                        <div class="form-check">
+                            <input id="debit" name="paymentMethod" type="radio" class="form-check-input" required="">
+                            <label class="form-check-label" for="debit">Debit card</label>
+                        </div>
+                    </div>
+
+
+                    <div class="row gy-1">
+                        <div class="col-md-6">
+                            <label for="cc-name" class="form-label">Card Holder Name</label>
+                            <input type="text" class="form-control" id="cc-name"
+                                placeholder="Full name as displayed on card" required="">
+                            <div class="invalid-feedback">
+                                Name on card is required
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="row gy-1">
+                        <div class="col-md-6">
+                            <label for="cc-number" class="form-label">Card number</label>
+                            <input type="text" maxlength="16" class="form-control" id="cc-number"
+                                placeholder="Enter 16 digit card number without spaces" required="">
+                            <div class="invalid-feedback">
+                                Credit card number is required
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="row gy-1">
+                        <div class="col-md-3">
+                            <label for="cc-expiration" class="form-label">Expiration</label>
+                            <input type="date" class="form-control" data-date-format="dd/mm/yyyy" id="datepicker"
+                                placeholder="" required="">
+                            <div class="invalid-feedback">
+                                Expiration date required
+                            </div>
+                        </div>
+
+                        <div class="col-md-3">
+                            <label for="cc-cvv" class="form-label">CVV</label>
+                            <input type="text" maxlength="3" class="form-control" id="cc-cvv"
+                                placeholder="Enter 3 digit pin" required="">
+                            <div class="invalid-feedback">
+                                Security code required
+                            </div>
+                        </div>
+                    </div>
+                </main>
+            </div>
+        </div>
+        <div class="col-sm-2">
+
+        </div>
+    </div>
+</div>
+
+<hr class="my-4">
+<div class="text-center">
+    <button class="w-25 btn btn-primary btn-lg" (click)="movetopdf()" type="submit">Continue to make payment</button>
+    <!-- <a (click)="movetopayment()" class="btn btn-primary">Buy Now</a> -->
+</div>
+<footer class="my-5 pt-5 text-muted text-center text-small">
+    <p class="mb-1">© VoizFonica</p>
+    <ul class="list-inline">
+        <li class="list-inline-item"><a href="#">Privacy</a></li>
+        <li class="list-inline-item"><a href="#">Terms</a></li>
+        <li class="list-inline-item"><a href="#">Support</a></li>
+    </ul>
+</footer>

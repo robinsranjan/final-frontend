@@ -1,0 +1,61 @@
+<div class="bootstrap-wrapper">
+    <div class="container  ">
+        <div class="row" style="margin-top: 20px;">
+            <div class="col-md-6 offset-md-3">
+                <div class="container" style="max-width:600px;background-color:white">
+                    <!-- {{user|json}} -->
+                    <form class='card p-3' #loginform="ngForm" (ngSubmit)="loginUser()">
+                        <!-- <div class="container">
+                        <img class="mx-auto d-block" src="../../assets/logo.jpg" alt="" style="width:200px;">
+                    </div> -->
+                        <h2 class="container text-center "> Admin Login</h2>
+
+                        <!-- Email-->
+                        <div class="form-group">
+                            <label class="font-weight-bold" for="email">EMAIL</label>
+                            <input name="email" type="text" class="form-control" id="email" [(ngModel)]="user.email"
+                                placeholder="Enter your email id" required ngModel #email="ngModel">
+                            <small class="text-danger" [class.d-none]="email.valid || email.untouched">
+                                Email is
+                                required !</small>
+                        </div>
+
+                        <!-- Password -->
+                        <div class="form-group">
+                            <label class="font-weight-bold" for="Username">PASSWORD</label>
+                            <input name="password" type="password" class="form-control" id="password"
+                                [(ngModel)]="user.password" required ngModel placeholder="Enter your Password"
+                                #pass="ngModel">
+                            <small class="text-danger" [class.d-none]="pass.valid || pass.untouched">
+                                Password is
+                                required !</small>
+                        </div>
+                        <div class="adjust-line-height">
+                            <span class="psw"> <a (click)="toAdminRegister()" style="color:black;"> New user? Register
+                                    here</a></span>
+                        </div>
+
+                        
+
+                        <div class="adjust-line-height">
+                            <span class="psw"> <a href="/forgotpassword" style="color:black;"> Forgot password?
+                                    Click
+                                    here</a></span>
+                        </div><br>
+                        <!-- add routing -->
+
+                        <div class="container">
+                            <button type="submit" class="btn btn-primary btn-lg">Login</button>
+                        </div>
+                        
+                         
+
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+ 
+<!-- </div> -->

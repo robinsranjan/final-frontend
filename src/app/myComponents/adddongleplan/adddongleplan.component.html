@@ -1,0 +1,27 @@
+<div class="col-md-6 offset-md-3">
+    <h3> Add a Dongle plan </h3>
+    <form (ngSubmit)="onSubmit()">
+
+        <div class="form-group">
+            <label> Pack name</label>
+            <input type="text" class="form-control" id="firstName" [(ngModel)]="plans.packname" name="firstName">
+        </div>
+
+        <div class="form-group">
+            <label> Pack benefits</label>
+            <input type="text" class="form-control" id="lastName" [(ngModel)]="plans.packbenefits" name="lastName">
+        </div>
+
+        <div class="form-group">
+            <label> Validity</label>
+            <input type="text" class="form-control" id="emailId" [(ngModel)]="plans.validity" name="emailId">
+        </div>
+        <div class="form-group">
+            <label> Price</label>
+            <input type="number" class="form-control" id="emailId" [(ngModel)]="plans.price" name="emailId">
+        </div>
+
+        <button class="btn btn-success" type="submit">Submit</button>
+
+    </form>
+</div>

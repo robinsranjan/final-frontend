@@ -1,0 +1,149 @@
+<app-navbar></app-navbar>
+
+
+
+<section class="first-section ">
+
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+
+            <div class="carousel-item active" data-bs-interval="3000">
+
+                <div id="box-1" class="carousel-box" >
+                    <h4>old and trusworthy </h4>
+                    <h1> We provide the best servicces. Since 1950 .</h1>
+                    <button class="btn  btn-dark btn-lg">click here</button>
+                    <button class="btn  btn-dark btn-lg">click here</button>
+                </div>
+
+
+            </div>
+
+            <div class="carousel-item" data-bs-interval="3000">
+                <div id="box-2" class="carousel-box">
+                    <h4>Customer user friendly </h4>
+                    <h1>  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim, facilis!</h1>
+                    <button class="btn btn-dark">click here</button>
+                    <button class="btn btn-dark">click here</button>
+                </div>
+            </div>
+
+            <div class="carousel-item" data-bs-interval="3000">
+                <div id="box-3" class="carousel-box">
+                    <h4> Lorem ipsum dolor sit amet. </h4>
+                    <h1> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Obcaecati delectus fuga harum animi. .</h1>
+                    <button class="btn btn-dark">click here</button>
+                    <button class="btn btn-dark">click here</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+ 
+
+
+
+
+<section>
+
+
+  <div class="row row-cols-1 row-cols-md-3 mb-3 text-center ">
+    <div class="col-lg-4">
+      <div class="card mb-4 rounded-3 shadow-sm">
+        <div class="card-header py-3">
+          <h4 class="my-0 fw-normal">Pre-Paid Plans</h4>
+        </div>
+        <div class="card-body">
+          <h1 class="card-title pricing-card-title">Grab Now</h1>
+          <ul class="list-unstyled mt-3 mb-4">
+            <li>Sign up for a prepaid plan</li>
+            <li>you'll pay upfront for what you plan to use</li>
+            <li>pay for the plan in advance</li>
+            <li>Help center access</li>
+          </ul>
+          <a  >
+            <button type="button" (click)="moveToPrepaid()" class="w-100 btn btn-lg btn-primary">Check Plans</button></a>
+        </div>
+      </div>
+    </div>
+
+
+
+
+    <div class="col-lg-4">
+      <div class="card mb-4 rounded-3 shadow-sm">
+        <div class="card-header py-3">
+          <h4 class="my-0 fw-normal">Post-Paid Plans</h4>
+        </div>
+        <div class="card-body">
+          <h1 class="card-title pricing-card-title">It's All Yours</h1>
+          <ul class="list-unstyled mt-3 mb-4">
+            <li>Take an advantage of service</li>
+            <li>you have pay the bill after the service</li>
+
+            <li>long-term connection for your business</li>
+            <li>Help center access</li>
+          </ul>
+          <a  >
+            <button type="button" (click)="moveToPostpaid()" class="w-100 btn btn-lg btn-primary">Check Plans</button></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-lg-4">
+      <div class="card mb-4 rounded-3 shadow-sm ">
+        <div class="card-header py-3 bg-light ">
+          <h4 class="my-0 fw-normal">Dongle Plans</h4>
+        </div>
+        <div class="card-body">
+          <h1 class="card-title pricing-card-title" >Take it or Leave it</h1>
+          <ul class="list-unstyled mt-3 mb-4">
+            <li>Great option for on-the-go high-speed data</li>
+            <li>Here multiple devices can be connected</li>
+            <li>create a Wi-Fi hotspot on the go</li>
+            <li>Help center access</li>
+          </ul>
+          <a   >
+            <button type="button" (click)="moveToDongle()" class="w-100 btn btn-lg btn-primary">Check Plans
+            </button></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+</section>
+
+
+
+<section>
+
+    <div class="card mb-3" style="max-width: max-content;">
+        <div class="row g-0">
+          <div class="col-md-5">
+            <img src="assets/images/service/img-4.jpg" width="1000" height="400"
+              class="img-fluid rounded-start" alt="prepaid_image">
+          </div>
+          <div style="background-color: black;" class="col-md-7">
+            <div class="card-body">
+              <h5 class="card-title"></h5>
+              <p style="color: rgb(244, 239, 242); font-size: 400%;" class="card-text">
+                Enjoy the new service with VoizFonica</p><br>
+              <h3>
+                <p class="text-light">Get a plan that's perfect for you </p>
+              </h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+
+</section>
+
+
+<app-before-footer></app-before-footer>
+
+<app-footer></app-footer>

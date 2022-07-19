@@ -1,0 +1,53 @@
+<app-navbar></app-navbar>
+
+
+<section class="first">
+
+    <div class="card mb-3" style="max-width: max-content;">
+        <div class="row g-0">
+            <div class="col-md-5">
+                <img src="assets/images/plans/prepaid_image.jpg" width="700" height="400"
+                    class="img-fluid rounded-start" alt="prepaid_image">
+            </div>
+            <div style="background-color: rgb(35, 45, 162);" class="col-md-7">
+                <div class="card-body">
+                    <h5 class="card-title"></h5>
+                    <p style="color: rgb(244, 239, 242); font-size: 500%;" class="card-text">
+                        <b>Enjoy all new unlimited prepaid plans with your family</b>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</section>
+
+<h1 style="text-align: center;"><b> Prepaid Mobile Plans</b></h1>
+
+
+
+
+
+<div class="row    my-3">
+    <div class="col-lg-6" *ngFor="let plans of plans">
+
+        <div class="card text-center">
+            <div class="card-body">
+                <h2 class="card-title">{{ plans.packname}}</h2>
+                <h5 class="card-title"> {{ plans.price }}</h5>
+                <p class="card-text"> {{ plans.packbenefits }}</p>
+                <h6>{{ plans.validity }}</h6>
+                <a (click)="movetopayment()" class="btn btn-primary">Buy Now</a>
+            </div>
+        </div>
+
+
+
+    </div>
+</div>
+
+
+<app-before-footer></app-before-footer>
+
+<app-footer></app-footer>

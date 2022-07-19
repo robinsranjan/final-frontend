@@ -1,0 +1,121 @@
+first-section
+{
+    /* border: 2px solid red; */
+    height: 500px;
+    width: 100%;
+    /* color:  white; */
+    font-weight: bolder;
+    
+ 
+    
+}
+
+#box-1::before
+{
+content: "";
+position: absolute;
+background-image: url(' /src/assets/images/service/img-4.jpg');
+background-repeat: no-repeat;
+background-position: center;
+background-size: cover;
+height: 100%;
+width: 100%;
+z-index: -1;
+opacity: 0.5;
+top: 0;
+left: 0;
+
+
+}
+
+#box-1
+{
+      
+    /* border: 2px solid black; */
+      text-align: center;
+     height: 500px;
+     padding-top:7em ;
+     position: relative;
+    
+}
+
+/* moving courousel photos in background */
+ 
+
+#box-2::before
+{
+content: "";
+position: absolute;
+background-image: url(' /src/assets/images/service/img-2.jpg');
+background-repeat: no-repeat;
+background-position: center;
+background-size: cover;
+height: 100%;
+width: 100%;
+z-index: -1;
+opacity: 0.5;
+top: 0;
+left: 0;
+
+
+}
+
+#box-2
+{
+      
+    /* border: 2px solid black; */
+      text-align: center;
+     height: 500px;
+     padding-top:7em ;
+     position: relative;
+    
+}
+
+
+
+
+#box-3::before
+{
+content: "";
+position: absolute;
+background-image: url(' /src/assets/images/service/image-4.jpg');
+background-repeat: no-repeat;
+background-position: center;
+background-size: cover;
+height: 100%;
+width: 100%;
+z-index: -1;
+opacity: 0.5;
+top: 0;
+left: 0;
+
+
+}
+
+#box-3
+{
+      
+    /* border: 2px solid black; */
+      text-align: center;
+     height: 500px;
+     padding-top:7em ;
+     position: relative;
+    
+}
+
+
+
+.carousel-box ,h4
+{
+    padding: 2rem;
+
+}
+
+.carousel-box button
+{
+    /* margin: rem; */
+    margin: 10px;
+
+}
+
+

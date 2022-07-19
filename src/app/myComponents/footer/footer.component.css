@@ -1,0 +1,13 @@
+footer
+{
+    color:white;
+    height: 35px;
+    /* border: 2px solid red; */
+    background-color: rgb(50, 48, 48);
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    border: 2px solid white;
+}
+

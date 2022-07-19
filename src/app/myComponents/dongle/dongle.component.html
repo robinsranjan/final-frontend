@@ -1,0 +1,296 @@
+<app-navbar></app-navbar>
+
+
+<section class="first">
+
+    <div class="card mb-3" style="max-width: max-content;">
+        <div class="row g-0">
+            <div class="col-md-5">
+                <img src="assets/images/plans/prepaid_image.jpg" width="700" height="400"
+                    class="img-fluid rounded-start" alt="prepaid_image">
+            </div>
+            <div style="background-color: rgb(35, 45, 162);" class="col-md-7">
+                <div class="card-body">
+                    <h5 class="card-title"></h5>
+                    <p style="color: rgb(244, 239, 242); font-size: 500%;" class="card-text">
+                        <b>Enjoy all new unlimited dongle plans with your family</b>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</section>
+
+<h1 style="text-align: center;"><b> Dongle Plans</b></h1>
+
+
+
+
+
+<div class="row    my-3">
+    <div class="col-lg-6" *ngFor="let plans of plans">
+
+        <div class="card text-center">
+            <div class="card-body">
+                <h2 class="card-title">{{ plans.packname}}</h2>
+                <h5 class="card-title"> {{ plans.price }}</h5>
+                <p class="card-text"> {{ plans.packbenefits }}</p>
+                <h6>{{ plans.validity }}</h6>
+                <a (click)="movetopayment()" class="btn btn-primary">Buy Now</a>
+            </div>
+        </div>
+
+
+
+    </div>
+</div>
+
+
+<app-before-footer></app-before-footer>
+
+<app-footer></app-footer>
+
+
+
+
+
+
+
+
+
+
+
+<!-- 
+<app-navbar></app-navbar>
+<section class="first">
+
+    <div class="card mb-3" style="max-width: max-content;">
+        <div class="row g-0">
+            <div class="col-md-5">
+                <img src="assets/images/plans/img-5.jpg" width="700" height="400"
+                    class="img-fluid rounded-start" alt="prepaid_image">
+            </div>
+            <div style="background-color: rgb(35, 45, 162);" class="col-md-7">
+                <div class="card-body">
+                    <h5 class="card-title"></h5>
+                    <p style="color: rgb(244, 239, 242); font-size: 500%;" class="card-text">
+                        <b>Enjoy all new unlimited postpaid plans with your family</b>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</section>
+
+<h1 style="text-align: center;"><b> Postpaid Mobile Plans</b></h1>
+
+
+
+
+<section class="sub-header container">
+
+    <div class="row  plans-display">
+
+        <div class="col-lg-6">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">₹ 179</h5>
+                    <p class="card-text">Truly Unlimited calls + 2 GB Data + 300 SMS + Wynk music</p>
+                    <a href=""><button class="btn btn-primary">Recharge now</button></a>
+                </div>
+            </div>
+
+        </div>
+        <div class="col-lg-6">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">₹ 179</h5>
+                    <p class="card-text">Truly Unlimited calls + 2 GB Data + 300 SMS + Wynk music</p>
+                    <a href=""><button class="btn btn-primary">Recharge now</button></a>
+                </div>
+            </div>
+
+        </div>
+
+
+    </div>
+    <div class="row plans-display">
+
+        <div class="col-lg-6">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">₹ 179</h5>
+                    <p class="card-text">Truly Unlimited calls + 2 GB Data + 300 SMS + Wynk music</p>
+                    <a href=""><button class="btn btn-primary">Recharge now</button></a>
+                </div>
+            </div>
+
+        </div>
+        <div class="col-lg-6">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">₹ 179</h5>
+                    <p class="card-text">Truly Unlimited calls + 2 GB Data + 300 SMS + Wynk music</p>
+                    <a href=""><button class="btn btn-primary">Recharge now</button></a>
+                </div>
+            </div>
+
+        </div>
+
+
+    </div>
+    <div class="row plans-display">
+
+        <div class="col-lg-6">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">₹ 179</h5>
+                    <p class="card-text">Truly Unlimited calls + 2 GB Data + 300 SMS + Wynk music</p>
+                    <a href=""><button class="btn btn-primary">Recharge now</button></a>
+                </div>
+            </div>
+
+        </div>
+        <div class="col-lg-6">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">₹ 179</h5>
+                    <p class="card-text">Truly Unlimited calls + 2 GB Data + 300 SMS + Wynk music</p>
+                    <a href=""><button class="btn btn-primary">Recharge now</button></a>
+                </div>
+            </div>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+
+<app-before-footer></app-before-footer>
+
+<app-footer></app-footer> -->
+
+
+
+
+<!-- <app-navbar></app-navbar>
+
+<section class="first">
+
+    <div class="card mb-3" style="max-width: max-content;">
+        <div class="row g-0">
+            <div class="col-md-5">
+                <img src="assets/images/plans/dongle.jpg" width="700" height="550"
+                    class="img-fluid rounded-start" alt="prepaid_image">
+            </div>
+            <div style="background-color: rgb(35, 45, 162);" class="col-md-7">
+                <div class="card-body">
+                    <h5 class="card-title"></h5>
+                    <p style="color: rgb(244, 239, 242); font-size: 400%;" class="card-text">
+                        <b>Enjoy all new unlimited Dongle plans with your family</b>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</section>
+
+<h1 style="text-align: center;"><b> Dongle Mobile Plans</b></h1>
+
+
+
+
+<section class="sub-header container">
+
+    <div class="row  plans-display">
+
+        <div class="col-lg-6">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">₹ 179</h5>
+                    <p class="card-text">Truly Unlimited calls + 2 GB Data + 300 SMS + Wynk music</p>
+                    <a href=""><button class="btn btn-primary">Recharge now</button></a>
+                </div>
+            </div>
+
+        </div>
+        <div class="col-lg-6">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">₹ 179</h5>
+                    <p class="card-text">Truly Unlimited calls + 2 GB Data + 300 SMS + Wynk music</p>
+                    <a href=""><button class="btn btn-primary">Recharge now</button></a>
+                </div>
+            </div>
+
+        </div>
+
+
+    </div>
+    <div class="row plans-display">
+
+        <div class="col-lg-6">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">₹ 179</h5>
+                    <p class="card-text">Truly Unlimited calls + 2 GB Data + 300 SMS + Wynk music</p>
+                    <a href=""><button class="btn btn-primary">Recharge now</button></a>
+                </div>
+            </div>
+
+        </div>
+        <div class="col-lg-6">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">₹ 179</h5>
+                    <p class="card-text">Truly Unlimited calls + 2 GB Data + 300 SMS + Wynk music</p>
+                    <a href=""><button class="btn btn-primary">Recharge now</button></a>
+                </div>
+            </div>
+
+        </div>
+
+
+    </div>
+    <div class="row plans-display">
+
+        <div class="col-lg-6">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">₹ 179</h5>
+                    <p class="card-text">Truly Unlimited calls + 2 GB Data + 300 SMS + Wynk music</p>
+                    <a href=""><button class="btn btn-primary">Recharge now</button></a>
+                </div>
+            </div>
+
+        </div>
+        <div class="col-lg-6">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">₹ 179</h5>
+                    <p class="card-text">Truly Unlimited calls + 2 GB Data + 300 SMS + Wynk music</p>
+                    <a href=""><button class="btn btn-primary">Recharge now</button></a>
+                </div>
+            </div>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+
+<app-before-footer></app-before-footer>
+
+<app-footer></app-footer> -->

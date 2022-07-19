@@ -1,0 +1,31 @@
+<h2 class="text-center my-5">USer messages</h2>
+
+<table class="container table table-striped">
+    <thead>
+        <tr>
+            <th>first name</th>
+            <th>last name</th>
+            <th>country</th>
+            <th>message</th>
+            <th>Actions</th>
+        </tr>
+
+
+
+    </thead>
+
+    <tbody>
+        <tr *ngFor="let message of messages">
+
+            <td>{{message.firstName}}</td>
+            <td>{{message.lastName}}</td>
+            <td>{{message.country}}</td>
+            <td>{{message.message}}</td>
+            <td>
+                <button (click)="deleteMessage(message.id)" class="btn btn-danger">Delete Me</button>
+            </td>
+        </tr>
+
+    </tbody>
+
+</table>
