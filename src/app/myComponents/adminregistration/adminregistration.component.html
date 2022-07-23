@@ -1,5 +1,5 @@
  
-<div class="bootstrap-wrapper">
+<div class=" admin-box">
     <div class="container  ">
         <div class="row" style="margin-top: 20px;">
             <div class="col-md-6 offset-md-3">
@@ -7,7 +7,7 @@
 
 
                 <!-- {{user|json}} -->
-                <form class='card p-3' (ngSubmit)="formSubmit()">
+                <form class=' p-3' (ngSubmit)="formSubmit()">
                     <!-- <div class="container">
                         <img class="mx-auto d-block" src="../../assets/logo.jpg" alt="" style="width:200px;">
                     </div> -->
@@ -17,7 +17,7 @@
 
                     <!-- Email-->
                     <div class="form-group">
-                        <label class="font-weight-bold" for="email">EMAIL</label>
+                        <label class="font-weight-bold" for="email"><i class="fa-solid fa-envelope"></i> EMAIL</label>
                         <input [(ngModel)]="user.email" name="email" type="text" class="form-control" id="email"
                             placeholder="Enter your email id" required ngModel #email="ngModel">
                         <small class="text-danger" [class.d-none]="email.valid || email.untouched">
@@ -32,7 +32,7 @@
                     </div>
                     <!-- firstname -->
                     <div class="form-group">
-                        <label class="font-weight-bold" for="text">FIRST NAME</label>
+                        <label class="font-weight-bold" for="text"><i class="fa-solid fa-person"></i>FIRST NAME</label>
                         <input [(ngModel)]="user.firstName" name="firstName" type="text" class="form-control"
                             id="firstname" placeholder="Enter your First name" required ngModel #firstName="ngModel">
                     </div>
@@ -41,66 +41,26 @@
 
                     <!-- lastname -->
                     <div class="form-group">
-                        <label class="font-weight-bold" for="text">LAST NAME</label>
+                        <label class="font-weight-bold" for="text"><i class="fa-solid fa-person"></i>LAST NAME</label>
                         <input [(ngModel)]="user.lastName" name="lastName" type="text" class="form-control"
                             id="lastname" placeholder="Enter your Last name" required ngModel #lastName="ngModel">
                     </div>
 
                     <!-- Password -->
                     <div class="form-group">
-                        <label class="font-weight-bold" for="Username">PASSWORD</label>
+                        <label class="font-weight-bold" for="Username"><i class="fa-solid fa-lock"></i> PASSWORD</label>
                         <input [(ngModel)]="user.password" name="password" type="password" class="form-control"
                             id="password" required placeholder="Set your Password">
                     </div>
 
                     <!-- mobileno -->
                     <div class="form-group">
-                        <label class="font-weight-bold" for="text">MOBILE</label>
+                        <label class="font-weight-bold" for="text"><i class="fa-solid fa-mobile"></i> MOBILE</label>
                         <input [(ngModel)]="user.mobileNumber" name="mobileNumber" type="text" class="form-control"
                             id="mobileNumber" required placeholder="Enter your mobileNumber">
                     </div>
 
-
-                    <!-- Gender -->
-                    <!-- <div class="form-group">
-                        <label class="font-weight-bold" for="text">Gender</label>
-                        <input [(ngModel)]="user.gender" name="gender" type="text" class="form-control" id="gender"
-                            placeholder="Enter your gender">
-                    </div> -->
-
-                    <!-- <div class="form-check">
-                        <input class="form-check-input position-static" type="radio" name="blankRadio" id="blankRadio1" value="option1"
-                            aria-label="...">
-                    </div> -->
-                    <!-- <div class="form-check">
-                        <input [(ngModel)]="user.gender" class=form-check-input" type="radio" name="gridRadios"
-                            id="gridRadios1" value="option1">
-                        
-                        <label class="form-check-label" for="gridRadios1">
-                            Male
-                        </label>
-                    </div>
-                    <div class="form-check">
-                        <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1"
-                            checked>
-                        <label class="form-check-label" for="gridRadios1">
-                            Female
-                        </label>
-                    </div> -->
-
-
-                    <!-- 
-                    <form>
-                        <select name="dropdown" id="gender" [(ngModel)]="user.gender">
-                            <option value="none" selected disabled hidden>
-                                Select an Option
-                            </option>
-                            <option value="MALE">MALE</option>
-                            <option value="FEMALE">FEMALE</option>
-                            <option value="OTHERS">OTHERS</option>
-                        </select>
-
-                    </form> -->
+ 
 
                     <div class="form-group">
                         <label for="sel1">GENDER</label>
@@ -114,34 +74,14 @@
 
 
 
-
-                    <!-- type
-                    <div class="form-group">
-                        <label class="font-weight-bold" for="text">type</label>
-                        <input [(ngModel)]="user.type" name="type" type="text" class="form-control" id="type"
-                            placeholder="Enter your type">
-                    </div> -->
-
-                    <!-- adhar
-                    <div class="form-group">
-                        <label class="font-weight-bold" for="text">adharNumber</label>
-                        <input [(ngModel)]="user.adharNumber" name="adharNumber" type="text" class="form-control"
-                            id="adharNumber" placeholder="Enter your adharNumber">
-                    </div> -->
+ 
 
 
 
 
 
 
-
-
-                    <div class="form-check">
-                        <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
-                        <label class="form-check-label" for="defaultCheck1">
-                            I agree all the <a href="#!">Terms & Conditions</a>
-                        </label>
-                    </div>
+                   
 
                     <div class="adjust-line-height">
                         <span class="psw"> <a (click)="toAdminLogin()" style="color:black;"> Existing user? Click here</a></span>
@@ -151,7 +91,7 @@
 
                     <!-- add routing -->
                     <div class="container">
-                        <button type="submit" class="btn btn-primary btn-lg">Register</button>
+                        <button type="submit" class="btn btn-outline-dark btn-lg">Register</button>
                     </div>
 
 

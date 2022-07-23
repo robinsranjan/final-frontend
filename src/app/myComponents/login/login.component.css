@@ -1,19 +1,60 @@
 .form-control:valid {
-    background-color: #d3f1f3 !important;
+    /* background-color: #d3f1f3 !important; */
 }
 
 
-
+*{
+    color: white;
+}
 .card {
-    background-color: rgb(239, 255, 253);
+    /* background-color: rgb(239, 255, 253); */
 
 }
 
 .adjust-line-height {
     line-height: 2em;
 }
+ 
+
+
+.login
+{
+        /* border: 2px solid yellow; */
+        height: 100vh;
+        padding-top: 5rem;
+        background: url(' /src/assets/images/home/dark-1.webp') no-repeat center center fixed;
+        background-size:cover;
+
+}
 
 .login-body
 {
-    background-color: aqua;
+    /* border: 2px solid yellow; */
+    margin-top: 25px;
+}
+ 
+
+input{
+    border: none;
+    outline: none;
+    /* color: white; */
+    font-size: 1.2rem;
+    background: none;
+    border-bottom: 1px solid white;
+
+     
+}
+.psw{
+    color: white;
+    font-size: .9rem;
+}
+
+input::placeholder {
+    
+    opacity: .5;
+    color:white;
+}
+label
+{
+    font-size: 1.2rem;
 }

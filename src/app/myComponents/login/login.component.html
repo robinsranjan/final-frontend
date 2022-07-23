@@ -1,31 +1,31 @@
 <div class="login">
 
 
-<div class="bootstrap-wrapper  ">
-    <div class="container  ">
+<div class="  login-body ">
+    <div class="container  " id="form-box">
         <div class="row" style="margin-top: 20px;">
             <div class="col-md-6 offset-md-3">
-                <div class="container" style="max-width:600px;background-color:white">
+                <div class="container" style="max-width:600px; ">
                     <!-- {{user|json}} -->
-                    <form class='card p-3' #loginform="ngForm" (ngSubmit)="loginUser()">
+                    <form class=' ' #loginform="ngForm" (ngSubmit)="loginUser()">
                         <!-- <div class="container">
                         <img class="mx-auto d-block" src="../../assets/logo.jpg" alt="" style="width:200px;">
                     </div> -->
-                        <h2 class="container text-center "> Login your account</h2>
+                        <h2 class="container text-center "> <i class="fa-solid fa-user"></i> Login your account</h2>
 
                         <!-- Email-->
                         <div class="form-group">
-                            <label class="font-weight-bold" for="email">EMAIL</label>
+                            <label class="font-weight-bold" for="email"><i class="fa-solid fa-envelope"></i>EMAIL</label>
                             <input name="email" type="text" class="form-control" id="email" [(ngModel)]="user.email"
-                                placeholder="Enter your email id" required ngModel #email="ngModel">
+                                placeholder= " Enter your email id" required ngModel #email="ngModel">
                             <small class="text-danger" [class.d-none]="email.valid || email.untouched">
                                 Email is
                                 required !</small>
                         </div>
 
                         <!-- Password -->
-                        <div class="form-group">
-                            <label class="font-weight-bold" for="Username">PASSWORD</label>
+                        <div class="form-group my-5">
+                            <label class="font-weight-bold" for="Username"> <i class="fa-solid fa-lock"></i>PASSWORD</label>
                             <input name="password" type="password" class="form-control" id="password"
                                 [(ngModel)]="user.password" required ngModel placeholder="Enter your Password"
                                 #pass="ngModel">
@@ -34,23 +34,23 @@
                                 required !</small>
                         </div>
                         <div class="adjust-line-height">
-                            <span class="psw"> <a (click)="toSignup()" style="color:black;"> New user? Register
+                            <span class="psw"> <a (click)="toSignup()"  > New user? Register
                                     here</a></span>
                         </div>
 
                         <div class="adjust-line-height">
-                            <span class="psw"> <a (click)="toForgotPassword()" style="color:black;"> Forgot password?
+                            <span class="psw"> <a (click)="toForgotPassword()"  > Forgot password?
                                     Click
                                     here</a></span>
                         </div>
                         <div class="adjust-line-height">
-                            <span class="psw"> <a (click)="toAdminLogin()" style="color:black;"> Login as Admin?
+                            <span class="psw"> <a (click)="toAdminLogin()"  > Login as Admin?
                                     Click
                                     here</a></span>
                         </div><br>
 
                         <div class="container">
-                            <button type="submit" class="btn btn-primary btn-lg">Login</button>
+                            <button type="submit" class="btn btn-outline-light btn-lg">Login</button>
                         </div>
 
 

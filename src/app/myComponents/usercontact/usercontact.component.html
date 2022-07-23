@@ -1,4 +1,9 @@
-<h2 class="text-center my-5">USer messages</h2>
+
+<div class="user-box">
+
+
+
+<h2 class="text-center my-5 ">USer messages</h2>
 
 <table class="container table table-striped">
     <thead>
@@ -22,10 +27,12 @@
             <td>{{message.country}}</td>
             <td>{{message.message}}</td>
             <td>
-                <button (click)="deleteMessage(message.id)" class="btn btn-danger">Delete Me</button>
+                <button (click)="deleteMessage(message.id)" class="btn btn-outline-danger">Delete Me</button>
             </td>
         </tr>
 
     </tbody>
 
 </table>
+
+</div>

@@ -1,18 +1,18 @@
-<div class="bootstrap-wrapper">
+<div class="admin-box">
     <div class="container  ">
         <div class="row" style="margin-top: 20px;">
             <div class="col-md-6 offset-md-3">
-                <div class="container" style="max-width:600px;background-color:white">
+                <div class="container" style="max-width:600px; ">
                     <!-- {{user|json}} -->
-                    <form class='card p-3' #loginform="ngForm" (ngSubmit)="loginUser()">
+                    <form class='  p-3' #loginform="ngForm" (ngSubmit)="loginUser()">
                         <!-- <div class="container">
                         <img class="mx-auto d-block" src="../../assets/logo.jpg" alt="" style="width:200px;">
                     </div> -->
                         <h2 class="container text-center "> Admin Login</h2>
 
                         <!-- Email-->
-                        <div class="form-group">
-                            <label class="font-weight-bold" for="email">EMAIL</label>
+                        <div class="form-group my-3">
+                            <label class="font-weight-bold" for="email"> <i class="fa-solid fa-envelope"></i>EMAIL</label>
                             <input name="email" type="text" class="form-control" id="email" [(ngModel)]="user.email"
                                 placeholder="Enter your email id" required ngModel #email="ngModel">
                             <small class="text-danger" [class.d-none]="email.valid || email.untouched">
@@ -21,8 +21,8 @@
                         </div>
 
                         <!-- Password -->
-                        <div class="form-group">
-                            <label class="font-weight-bold" for="Username">PASSWORD</label>
+                        <div class="form-group my-3">
+                            <label class="font-weight-bold" for="Username"> <i class="fa-solid fa-lock"></i>PASSWORD</label>
                             <input name="password" type="password" class="form-control" id="password"
                                 [(ngModel)]="user.password" required ngModel placeholder="Enter your Password"
                                 #pass="ngModel">
@@ -31,21 +31,21 @@
                                 required !</small>
                         </div>
                         <div class="adjust-line-height">
-                            <span class="psw"> <a (click)="toAdminRegister()" style="color:black;"> New user? Register
+                            <span class="psw"> <a (click)="toAdminRegister()" > New user? Register
                                     here</a></span>
                         </div>
 
                         
 
                         <div class="adjust-line-height">
-                            <span class="psw"> <a href="/forgotpassword" style="color:black;"> Forgot password?
+                            <span class="psw"> <a href="/forgotpassword"  > Forgot password?
                                     Click
                                     here</a></span>
                         </div><br>
                         <!-- add routing -->
 
                         <div class="container">
-                            <button type="submit" class="btn btn-primary btn-lg">Login</button>
+                            <button type="submit" class="btn btn-outline-dark btn-lg">Login</button>
                         </div>
                         
                          

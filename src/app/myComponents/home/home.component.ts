@@ -28,5 +28,10 @@ moveToDongle()
   this._router.navigate(['/dongle'])
 }
 
+moveToService()
+{
+  this._router.navigate(['/service'])
+}
+
 
 }
